@@ -1,33 +1,43 @@
 *{
     box-sizing: border-box;   
-
 }
 
 .odin-recipes {
     text-align: center;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .list {
-    font-size: large;
-    align-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    box-sizing: border-box;
+    margin: 0 150px;
+    width: 1400px;
+
+    
 }
 
 #div1, #div2, #div3 {
-    display: inline-flex;
+    margin: auto;
+    display: inline-block;
+
 }
 .el1, .el2, .el3{
+    
     border: 5px solid;
     padding: 5px;
-    margin: 20px;
-    height: 40px;
-    width: 350px;
+    font-size: large;
+    margin: 0 50px;
+    width: 320px;
     border-radius: 10px;
     text-align: center;
-    justify-content: center;
-
     border-color: black;
-    background-color: rgb(241, 0, 0);
-    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(162, 5, 5);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.megabox {
+    border: 5px solid;
+    padding-bottom: 780px;
+    background-color: rgb(254, 209, 149);
 }
