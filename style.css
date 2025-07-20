@@ -1,16 +1,23 @@
 *{
     box-sizing: border-box;   
-    border: 2px solid red;
-     background-color: rgb(254, 209, 149);
+    /* border: 2px solid red; */
+    background-color: rgb(254, 209, 149);
 }
 
 .megabox {
     border: 5px solid;
+    
 }
 
 .odin-recipes {
     text-align: center;
+    justify-content: center;
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    width: 250px;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    background-color: transparent;
 }
 
 .list {
@@ -54,4 +61,19 @@
     margin: 0 50px;
     border: 5px solid;    border-radius: 10px;   border-color:black;
     flex: 1;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    /* animation-iteration-count: infinite; */
+    
+}
+
+@keyframes spin {
+    50%{
+        scale: 0.7;
+        border-radius: 50%;
+        transform: rotate(360deg);
+    }
+
 }
