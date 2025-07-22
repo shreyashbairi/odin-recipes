@@ -1,6 +1,7 @@
+
 *{
     box-sizing: border-box;   
-    /* border: 2px solid red; */
+    border: 2px solid red;
     background-color: rgb(254, 209, 149);
 }
 
@@ -33,7 +34,7 @@
     
 }
 
-.el1, .el2, .el3{
+.list > *{
     flex: 1;
     display: inline-block;
     border: 5px solid;      
@@ -56,13 +57,13 @@
     
 }
 
-.img1, .img2, .img3{
+.images-div > * {
     width: 300px;
     margin: 0 50px;
     border: 5px solid;    border-radius: 10px;   border-color:black;
     flex: 1;
     animation-name: spin;
-    animation-duration: 4s;
+    animation-duration: 1s;
     animation-timing-function: ease;
     animation-delay: 1s;
     /* animation-iteration-count: infinite; */
@@ -73,7 +74,23 @@
     50%{
         scale: 0.7;
         border-radius: 50%;
-        transform: rotate(360deg);
+        transform: rotate(30deg);
     }
 
+}
+
+/* style.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400&display=swap');
+
+/* CSS Variables */
+:root {
+  --bg-color: #fdfbf5;
+  --text-color: #333333;
+  --primary-color: #333333;
+  --secondary-color: #ff6f61;
+  --accent-color: #285943;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
 }
